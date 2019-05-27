@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+.calc-container {
+    width: 250px;
+    height: 350px;
+    border: 3px solid #000;
+    background-color: #747474;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 1.5px;
+}
+
+.display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    background-color: rgba(240, 230, 197, 0.801);
+    color: #000;
+}
+
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid forestgreen;
+}
+
+.key:hover {
+    background-color: #8a8a8a;
+    cursor: pointer;
+}
+
+.key:active {
+    background-color: #383838;
+}
+
+.caboose {
+    background-color: rgb(197, 128, 0);
+}
+
+.caboose:hover {
+    background-color: rgb(238, 166, 32);
+}
+
+.caboose:active {
+    background-color: rgb(129, 88, 0);
+}
+
+.history-pane {
+    grid-column: 1 / -1;
+}
+
+.output-pane {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+}
+
+.clear-btn {
+    grid-column: 1 / 3;
+}
+
+.zero-btn {
+    grid-column: 1 / 3;
+    grid-row: 7 / -1;
+}
+
+.decimal-btn {
+    grid-column: 3 / 4;
+    grid-row: 7 / -1;
+}
